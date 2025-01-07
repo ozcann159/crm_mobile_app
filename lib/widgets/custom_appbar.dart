@@ -13,7 +13,8 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
         padding: const EdgeInsets.only(top: 10.0),
         child: AppBar(
           backgroundColor: backgroundColor,
-          title: Text(title),  // Dinamik başlık
+          automaticallyImplyLeading: false,
+          title: Text(title), // Dinamik başlık
           centerTitle: true,
           titleTextStyle: const TextStyle(
               color: appbarColor, fontSize: 20, fontWeight: FontWeight.bold),
